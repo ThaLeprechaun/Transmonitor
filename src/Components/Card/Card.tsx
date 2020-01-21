@@ -1,6 +1,11 @@
 import React from 'react'
 
-export default function Card(props: any) {
+interface ICardProps {
+  heading: string,
+  value: string
+}
+
+export default function Card(props: ICardProps) {
   return (
     <div className="card__container">
       <div className="card__container--details">

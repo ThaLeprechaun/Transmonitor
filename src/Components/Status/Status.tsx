@@ -2,7 +2,11 @@ import React from 'react';
 
 import './status.css';
 
-export default function Status({status}: any) {
+interface IStatusProps {
+  status: string
+}
+
+export default function Status({status}: IStatusProps) {
   const ellipse =  `assets/ellipse_${status === "reconciled" ? "green" : status === "unreconciled" ? "grey" : "yellow"}.svg`;
   const arrowDown = 'assets/arrow_down.svg';
   return (

@@ -3,9 +3,28 @@ import React from 'react'
 import './table.css';
 import Status from '../Status/Status';
 
-export default function Table({loading, data, error}: any) {
-  if (loading) return <>Loading...</>;
-  if (error) return <>Error!</>;
+
+interface ITableProps {
+  data: {
+    itemType: string,
+    price: string,
+    transactionNo: string,
+    time: string,
+    status: string
+  }
+}
+interface ITableState {
+  data: Array<ITableProps>
+}
+
+interface ITableComponentProps extends ITableState{
+  loading?: HTMLDivElement
+  error?: HTMLDivElement
+}
+
+export default function Table({loading, error, data}: ITableComponentProps) {
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error!</div>;
 
   return (
     <table style={{width: "100%"}}>
