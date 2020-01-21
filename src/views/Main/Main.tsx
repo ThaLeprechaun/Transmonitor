@@ -33,8 +33,8 @@ export default function Main() {
   const indexOfFirstData = indexOfLastData - dataPerPage;
   const currentData = dataTransactions.slice(indexOfFirstData, indexOfLastData);
 
-  const paginate = (p: any) => {
-    setCurrentPage(p);
+  const paginate = (page: number) => {
+    setCurrentPage(page);
   };
 
   return (
