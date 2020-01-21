@@ -14,7 +14,7 @@ const searchIcon = './assets/search.svg';
 export default function Main() {
   const [dataTransactions, setDataTransactions] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [dataPerPage, setDataPerPage] = useState(10);
+  const [dataPerPage] = useState(10);
 
   useEffect(() => {
     async function getData() {
