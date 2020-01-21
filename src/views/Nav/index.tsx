@@ -3,6 +3,7 @@ import React from 'react';
 import Img from '../../Components/Image/Img';
 import Avatar from '../../Components/Avatar';
 import './nav.css';
+import Search from '../../Components/Search/Search';
 
 export default function Navbar() {
   const searchIcon = './assets/search.svg';
@@ -18,7 +19,7 @@ export default function Navbar() {
             <div className="nav__search">
               <Img src={searchIcon} alt="searchIcon" className="search--icon"/>
               <div className="nav__search--input">
-                <input type="search" name="search" className="search__field" placeholder="Search..."/>
+                <Search type="search" name="search" className="search__field" placeholder="Search..."/>
               </div>
             </div>
           </div>
