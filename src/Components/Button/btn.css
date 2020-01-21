@@ -1,0 +1,21 @@
+.btn__style{
+  padding:0.6em 2em;
+  width: 16.3rem;
+  height: 3.3rem;
+  border-radius: 50px;
+  color:#fff;
+  background-color: #27AE60;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+  text-transform: uppercase;
+}
+.btn__style:hover{
+  background-color: #fff;
+  color: #27AE60;
+  border: 1px solid #27AE60;
+}
+.btn__style:focus {
+  border: none;
+  outline: none;
+}
