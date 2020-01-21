@@ -9,7 +9,7 @@ import './sidenav.css';
 interface IItemProps {
   text: string;
   icon: string;
-  key: number;
+  key?: number;
 }
 
 export default function SideNav() {
@@ -27,14 +27,14 @@ export default function SideNav() {
 
         <div className="sidenav__container--items2">
           <h5>payments</h5>
-            {items.topSideNavItems.map((item: any, index: number)=>(
+            {items.topSideNavItems.map((item: IItemProps, index: number)=>(
               <SideNavMenu text={item.text} src={item.icon} key={index}/>
             ))}
         </div>
 
         <div className="sidenav__container--items3">
           <h5>order</h5>
-            {items.bottomSideNavItems.map((item: any, index: number)=>(
+            {items.bottomSideNavItems.map((item: IItemProps, index: number)=>(
               <SideNavMenu text={item.text} src={item.icon} key={index}/>
             ))}
         </div>
