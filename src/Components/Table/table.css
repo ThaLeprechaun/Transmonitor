@@ -1,0 +1,41 @@
+.table-container{
+  width: 100%;
+  max-height: 72.6rem;
+  overflow: scroll;
+}
+
+table { 
+width: 100%; 
+border-collapse: collapse; 
+margin: 0rem auto;
+}
+
+tr:nth-of-type(odd) { 
+background: #fff; 
+}
+
+tr:nth-of-type(even){
+  background: #fff;
+}
+
+td{
+  height: 72px;
+  font-size: 1.4rem;
+  color: #414042;
+}
+
+th { 
+  background: #EAEEF0; 
+  height: 45px;
+  font-size: 14px;
+  color: #7F8FA4;
+  box-shadow: red;
+}
+
+td, th { 
+padding: 12px 10px; 
+border-bottom: 1px solid #CCCFD4; 
+text-align: left; 
+font-size: 14px;
+color: #7F8FA4;
+}
